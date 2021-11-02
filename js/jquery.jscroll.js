@@ -151,7 +151,7 @@
                 data.waiting = true;
                 $inner.append('<div class="jscroll-added" />')
                     .children('.jscroll-added').last()
-                    .html('<div class="jscroll-loading" id="jscroll-loading">' + _options.loadingHtml + '</div>')
+                    .htm('<div class="jscroll-loading" id="jscroll-loading">' + _options.loadingHtml + '</div>')
                     .promise()
                     .done(function() {
                         if (_options.loadingFunction) {
