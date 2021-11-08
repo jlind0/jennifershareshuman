@@ -1,0 +1,7 @@
+%create &site #__jennifershareshuman #_A_jennifershareshuman
+    %exec #_jennifershareshuman ::front-primary.jenniffershareshuman %render =>
+
+    % :> #_V_jennifershareshuman-default (##__present):() => :jenifershareshuman.^default;
+%;
+
+%request &send $100 #_A_odyss3us;

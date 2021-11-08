@@ -1,0 +1,21 @@
+%create &contract #_jennifershareshuman #_A_jennifershareshuman
+    %declare &acct!TikTok @jennifershareshuman `jen`TikTok;
+    %declare &acct!Twitter @jenshareshuman `jen`Twitter;
+    %declare &sys!jennifershareshuman.org :jennifershareshuman;
+
+    %bind ::front-primary<part> :jennifershareshuman<site> `jen`TikTok<tikTok> `jen`Twitter<twitter>
+        %service site-> [tikTok,twitter]{postdate, ?likes, ?views, ?shares, ?comments.count} &`data_site`;
+        %view ^default `view_default` ()> ``data :: &`data_site`->
+            %declare<part> `tikTok` -> ``data.tikTok{videoPlayer, description, poster, postdate, views, shares, comments};
+            %declare<part> `twitter` -> ``data.twitter{poster, tweet, retweets, likes};
+        %;
+        %func ##__present (``v : &`view_default`, ``sortBy? : &attr, ``gas? : &address) $$10 =>
+            ##_agg(``v.`tikTok`, ``v.`twitter`) ->
+                #part `combined` =>
+                    %view ^item `item` ->
+                        //TODO: Combine TikTok and Twitter data by Sort Condition on data_site and produce view
+                    % :: `data_agg`;
+                #;
+        %;
+    %;
+%;
