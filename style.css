@@ -2668,11 +2668,11 @@ embed, iframe, object {
 	background: #222328;
 	opacity: 0.3;
 }*/
-#home-banner .content {
+#home-banner.content, #bio.content {
 	margin-top: 0vw;
 	position: relative;
 }
-#home-banner .content-row:before {
+#home-banner.content-row, #bio.content-row:before {
 	content: "";
 	border:mistyrose 20px solid;
 	display: inline-block;
@@ -2683,12 +2683,12 @@ embed, iframe, object {
 	margin-top: -18vh;
 	margin-left: -50px;
 }
-#home-banner .content-row{
+#home-banner.content-row, #bio.content-row{
 	position:relative;
 	left:20pc;
 	top:8pc;
 }
-#home-banner .row-with-content h1 {
+#home-banner.row-with-content, #bio.row-with-content h1 {
 	font-weight: 900;
 	font-size: 32px;
 	display: block;
@@ -2696,7 +2696,7 @@ embed, iframe, object {
 	font-family: 'Lato', sans-serif;
 	margin-bottom: 10px;
 }
-#home-banner .row-with-content a {
+#home-banner .row-with-content, #bio.row-with-content a {
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
@@ -2704,7 +2704,7 @@ embed, iframe, object {
 	display: block;
 	text-decoration: underline;
 }
-#home-banner .row-with-content span {
+#home-banner .row-with-content, #bio.row-with-content span {
 	color: forestgreen;
 	font-weight:bolder;
 	font-size: 22px;
@@ -2833,6 +2833,24 @@ ol.type li a.active {
 	backface-visibility: hidden;
 	padding-left: 0;
 	padding-right: 0;
+}
+#top-header.fa, #top-header.fas, #top-header.fab{
+	color:slateblue;
+}
+#top-header.fa:hover, #top-header.fas:hover, #top-header.fab:hover{
+	color:steelblue;
+}
+#bio{
+	background-color: mistyrose;
+	color: black;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	padding: 0px 0;
+	position: relative;
 }
 .isotope {
 	-webkit-backface-visibility: hidden;
@@ -4283,11 +4301,11 @@ Responsive queries
 .porfolio-page-nav ul li.next-nav {
 	text-align: center;
 }
-#home-banner .content-row {
+#home-banner.content-row, #bio.content-row {
 	text-align: center;
 	padding: 20px;
 }
-#home-banner .content-row:before {
+#home-banner.content-row, #bio.content-row:before {
 	width: 100%;
 	left: 0px;
 	top: 0;
@@ -4419,12 +4437,12 @@ aside {
 	display: block;
 	float: none !important;
 }
-#home-banner .content-row:before {
+#home-banner.content-row, #bio.content-row:before {
 	width: 37%;
 	margin-top: -8vh;
 	margin-left: -8px;
 }
-#home-banner .content-row{
+#home-banner.content-row, #bio.content-row{
 	position:relative;
 	left:1pc;
 	top:2pc;
