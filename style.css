@@ -582,13 +582,13 @@ p a:hover {
 }
 /* 2.4 Alerts */
 .hash{
-	letter-spacing: 2px;
-	color: rgba(211, 97, 18, 0.8);
-	text-shadow: 2px 1px rgba(211, 97, 18, 0.35);
+	letter-spacing: 2px !important;
+	color: rgba(211, 97, 18, 0.8) !important;
+	text-shadow: 2px 1px rgba(211, 97, 18, 0.35) !important;
 }
 .hash:hover {
-	text-decoration-color: rgba(211, 97, 18, 0.8);
-	text-decoration: underline;
+	text-decoration-color: rgba(211, 97, 18, 0.8) !important;
+	text-decoration: underline !important;
 }
 .at{
 	letter-spacing: 2px;
@@ -2797,22 +2797,22 @@ ol.type li:last-child:after {
 	content: '';
 }
 ol.type li a {
-	color: forestgreen;
+	color: crimson;
 	font-size: 14px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
-	text-transform: uppercase;
+	text-transform: none;
 	padding: 8px 12px;
-	border: 2px peachpuff solid;
+	border: 2px mistyrose solid;
 	border-radius: 4px;
 }
 ol.type li a:hover {
-	border: 2px #dce5ec solid;
+	border: 2px crimson solid;
 	transition: all 0.5s;
 	text-decoration: none;
 }
 ol.type li a.active {
-	border: 2px #dce5ec solid;
+	border:thistle 2px solid;
 	text-decoration: none;
 }
 .isotope-item {
@@ -2849,7 +2849,6 @@ ol.type li a.active {
 	transition-property: transform, opacity;
 }
 .portfolio-item .hover-bg {
-	height: 380px;
 	overflow: hidden;
 	position: relative;
 }
@@ -3710,7 +3709,7 @@ display:inline-block;
 	text-decoration: none;
 	color: #fff;
 }
-blockquote {
+.q blockquote {
 	border-left: 2px crimson solid;
 	padding: 0px;
 	margin: 30px;
@@ -3718,10 +3717,14 @@ blockquote {
 	padding-left: 36px;
 	background: rgba(255, 255, 255, 0.15) url(img/bq-bg.png) 0 0 no-repeat;
 }
-.page blockquote {
+.page .q blockquote {
 	margin-left: 8.333%;
 }
-blockquote p {
+.tiktok-embed{
+	width:33vh;
+	height:75vh;
+}
+.q blockquote p {
 	font-size: 18px !important;
 	color: crimson !important;
 	font-weight: 300 !important;
@@ -4163,7 +4166,9 @@ blockquote p {
 }
 /*7.0 Footer*/
 
-
+#portfolio-type-a{
+	background-color: oldlace;
+}
 .footer-bottom {
 	background: #3c434e;
 	padding: 56px 0;
@@ -4337,7 +4342,7 @@ Responsive queries
 .single .single-post ol, .page .page-block ol {
 	padding-left: 15px;
 }
-blockquote {
+.q blockquote {
 	margin-left: 0;
 }
 #respond p {
