@@ -107,7 +107,7 @@ $('.sidenav nav ul li:has(ul)').addClass('menu-item-has-children');
 
 $(window).resize(function(){
 
-    $('#home-banner .content-row').css({
+    $('# .content-row').css({
         position:'relative',
         left: ($(window).width() - $('#home-banner .content-row').outerWidth())/2.6,
         top: ($(window).height() - $('#home-banner .content-row ').outerHeight())/4

@@ -571,7 +571,7 @@ p a:hover {
 	width:128px !important;
 	height: 128px !important;
 }
-.fa , .fab{
+.fa, .fab{
 	color: rgba(0, 0, 255, 0.4);
 }
 .fa-share-alt:hover{
@@ -580,68 +580,37 @@ p a:hover {
 .fa:hover, .fab:hover {
 	color:rgba(0, 0, 255, 0.9);
 }
-.poptag{
-	
-}
-.poptag span{
-	visibility: collapse;
-	
-}
-.poptag:hover span{
-	visibility: visible;
-	content: var(--popcontent);
-}
 /* 2.4 Alerts */
 .hash{
 	letter-spacing: 2px;
 	color: rgba(211, 97, 18, 0.8);
-	
+	text-shadow: 2px 1px rgba(211, 97, 18, 0.35);
 }
-.hash span:after{
-	position: absolute; left: 5px; top: 3px;
-	color: rgba(211, 97, 18, 0.35);
-	content: var(--hashcontent);
-}
-.hash p a:hover {
-	letter-spacing: 2px;
-	text-decoration-color: rgba(211, 97, 18, 0.8)!important;
-	transition: all 0.5s;
-	opacity: 0.8;
-	-moz-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
+.hash:hover {
+	text-decoration-color: rgba(211, 97, 18, 0.8);
 	text-decoration: underline;
-}
-.hash p a:hover span:after {
-	position: absolute; left: 5px; top: 3px;
-	text-decoration-color: rgba(211, 97, 18, 0.35);
-}
-.popbanner{
-	letter-spacing: 2px;
-	color: rgba(10, 65, 23, 0.8);
-}
-.popbanner span::after{
-	position: absolute; left: 5px; top: 3px;
-	color: rgba(10, 65, 23, 0.33);
-	content: var(--popbannercontent);
 }
 .at{
 	letter-spacing: 2px;
 	color: rgba(0, 0, 255, 0.69);
+	text-shadow: 2px 1px rgba(0, 0, 220, 0.39);
 	
 }
-.at span::after{
-	position: absolute; left: 5px; top: 3px;
-	color: rgba(0, 0, 255, 0.39);
-	content: var(--atcontent);
+.at:hover{
+	color: rgba(0, 0, 220, 0.39);
+	text-decoration-color: rgba(0, 0, 220, 0.39);
+	
 }
 .footer-social .at{
 	font-weight: 700;
-	
+	text-shadow: 1px 1px rgba(0, 255, 226, 1);;
 	color: rgba(0, 255, 226, 0.65);
 }
-.footer-social .at span:after{
-	left: 3px; top: 1px;
-	color: rgba(0, 255, 226, 1);
+.footer-bottom a{
+	color: mediumorchid;
+}
+.footer-bottom a:hover{
+	color: plum;
 }
 .alert {
 	font-size: 12px;
@@ -1580,15 +1549,6 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
 .progress-bar {
 	box-shadow: none;
 }
-.footer-bottom a{
-	color: darkmagenta;
-	text-decoration:none;
-}
-/* 3.7 Tabs */
-.footer-bottom a:hover{
-	text-decoration:none;
-	color:darkorchid;
-}
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
 	color: #3a405b;
 	background-color: #f0f2f7;
@@ -2270,12 +2230,21 @@ aside li a:hover {
 .widget_social {
 	display: block;
 }
-.widget_social .fa , .fab{
+.widget_social .fab{
 	display: inline-block;
 	padding: 10px 0px;
 	border-radius: 4px;
 }
-.widget_social li a:hover .fa, .fab {
+.widget_social .fa{
+	display: inline-block;
+	padding: 10px 0px;
+	border-radius: 4px;
+}
+.widget_social li a:hover .fa{
+	color: #787e87;
+	transition: all 0.5s;
+}
+.widget_social li a:hover .fab{
 	color: #787e87;
 	transition: all 0.5s;
 }
@@ -2313,7 +2282,7 @@ aside li a:hover {
 	font-weight: bold;
 	color: #bbbbbb;
 }
-. usrdt {
+.usrdt {
  margin-top: -90px;
 }
 .usrdt p {
@@ -2696,14 +2665,19 @@ embed, iframe, object {
 }
 #home-banner .content-row:before {
 	content: "";
-	border: 20px #e0ecf6 solid;
+	border:mistyrose 20px solid;
 	display: inline-block;
 	position: absolute;
 	width: 26%;
-	height: 50vh;
+	height: 42pc;
 	z-index: -1;
-	margin-top: -17%;
+	margin-top: -18vh;
 	margin-left: -50px;
+}
+#home-banner .content-row{
+	position:relative;
+	left:20pc;
+	top:8pc;
 }
 #home-banner .row-with-content h1 {
 	font-weight: 900;
@@ -2727,7 +2701,6 @@ embed, iframe, object {
 	font-size: 22px;
 	display: block;
 	font-family: 'Lato', sans-serif;
-	margin-bottom: 53px;
 	letter-spacing: 0.8px;
 }
 .content-row {
@@ -4234,7 +4207,7 @@ blockquote p {
 	display: inline-block;
 	padding: 10px;
 }
-.footer-social .fa,.fab {
+.footer-social .fa {
 	height: 45px;
 	width: 45px;
 	border-radius: 50%;
@@ -4243,11 +4216,23 @@ blockquote p {
 	color: #fff;
 	padding: 13px 12px;
 }
-.footer-social .fa:hover, .fab:hover {
+.footer-social .fab {
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	padding: 13px 12px;
+}
+.footer-social .fab:hover {
 	background: #5f6edc;
 	transition: all 0.5s;
 }
-
+.footer-social .fa:hover{
+	background: #5f6edc;
+	transition: all 0.5s;
+}
 
 
 
@@ -4440,6 +4425,7 @@ aside {
 #comments .comments-title {
 	text-align: center;
 }
+ }
  @media screen and (max-height: 450px) {
 .sidenav {
  padding-top: 15px;
@@ -4467,6 +4453,4 @@ aside {
 .author-box .author-box-title {
  display: block;
 }
-}
- @media (max-width: 360px) {
-}
+ }
