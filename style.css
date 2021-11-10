@@ -2703,6 +2703,7 @@ embed, iframe, object {
 	font-family: 'Lato', sans-serif;
 	letter-spacing: 0.8px;
 }
+
 .content-row {
 	margin-left: auto;
 }
@@ -4391,17 +4392,15 @@ aside {
 	display: block;
 	float: none !important;
 }
-#home-banner .content-row {
-	text-align: center;
-	padding: 20px;
-}
 #home-banner .content-row:before {
-	width: 100%;
-	left: 0px;
-	top: 0;
-	margin-top: 0;
-	display: none;
-	margin-left: 0
+	width: 37%;
+	margin-top: -8vh;
+	margin-left: -8px;
+}
+#home-banner .content-row{
+	position:relative;
+	left:1pc;
+	top:2pc;
 }
 .cat ol.type li {
 	display: block;
