@@ -2632,20 +2632,23 @@ embed, iframe, object {
 5.0 Homepage Sections
 -----------------*/
 
+.row-with-content h2, .row-with-content h1, .row-with-content h3, .row-with-content h4, .row-with-content h5{
+	text-shadow: none;
+}
 
 
 #home-banner {
+	background-color: mistyrose;
+	color: black;
+	text-shadow: darkslategray 1px 1px;
 	background-repeat: no-repeat;
-	
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	background-position: center;
 	padding: 0px 0;
-	position: relative;
-	min-height: 580px;
-	height: 60vh;
+	position: static !important;
 }
 .row-without-content {
 	background-repeat: no-repeat;
@@ -2656,65 +2659,24 @@ embed, iframe, object {
 	background-size: cover;
 	background-position: center;
 	padding: 0px 0;
-	position: relative;
 }
 #bio .row-without-content{
-	height: 50vh;
+	min-height: 50vh;
 }
 #home-banner .row-without-content{
-	height: 60vh;
-}
-#home-banner:before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	background: #222328;
-	opacity: 0.3;
+	min-height: 100vh;
 }
 #home-banner .content {
 	margin-top: 0vw;
-	position: relative;
 }
 #bio .content{
 	margin-top: 0vw;
-	position: relative;
-}
-#home-banner .content-row:before{
-	content: "";
-	border:mistyrose 20px solid;
-	display: inline-block;
-	position: absolute;
-	width: 26vh;
-	height: 70vh;
-	z-index: -1;
-	margin-top: -10vh;
-	margin-left: -3vw;
-	max-width: 250px;
-}
-#bio .content-row:before {
-	content: "";
-	border:mistyrose 20px solid;
-	display: inline-block;
-	position: absolute;
-	width: 26vh;
-	max-width: 250px;
-	height: 115vh;
-	z-index: -1;
-	margin-top: -10vh;
-	margin-left: -3vw;
 }
 #home-banner .content-row{
-	position:relative;
 	left:6vw;
 	top:5vh;
 }
 #bio .content-row{
-	position:relative;
 	left:6vw;
 	top:5vh;
 }
@@ -2772,31 +2734,21 @@ embed, iframe, object {
 	font-family: 'Lato', sans-serif;
 	letter-spacing: 0.8px;
 }
-@media (max-width:500px){
-	#bio .row-with-content{
-		min-height: 1900px;
-	}
-	#bio .content-row:before{
-		height: 1960px;
-	}
-}
 
 .content-row {
 	margin-left: auto;
+	align-self: center;
 }
 #bio .row-with-content {
-	position: relative;
 	min-height: 580px;
 	background: #fff;
 	z-index: 9;
-	height: 100vh;
+	position: static !important;
 }
 #home-banner .row-with-content {
-	position: relative;
 	min-height: 580px;
 	background: #fff;
 	z-index: 9;
-	height: 60vh;
 }
 .no-padding {
 	padding-left: 0;
@@ -2917,7 +2869,7 @@ ol.type li a.active {
 	color:steelblue;
 }
 #bio{
-	background-color: mistyrose;
+	background-color: #fff;
 	color: black;
 	text-shadow: darkslategray 1px 1px;
 	background-repeat: no-repeat;
@@ -2927,7 +2879,6 @@ ol.type li a.active {
 	background-size: cover;
 	background-position: center;
 	padding: 0px 0;
-	position: relative;
 }
 .isotope {
 	-webkit-backface-visibility: hidden;
@@ -3167,7 +3118,6 @@ ol.type li a.active {
 	opacity: 0;
 }
 #page-banner .content {
-	position: relative;
 	color: #fff;
 }
 #page-banner h5 {
@@ -3816,8 +3766,8 @@ display:inline-block;
 	margin-left: 8.333%;
 }
 .tiktok-embed{
-	width:33vh;
-	height:75vh;
+	height: 857px;
+	min-width: 550px;
 }
 .q blockquote p {
 	font-size: 18px !important;
@@ -4386,21 +4336,6 @@ Responsive queries
 	text-align: center;
 	padding: 20px;
 }
-#home-banner .content-row:before {
-	width: 100%;
-	left: 0px;
-	top: 0;
-	margin-top: 0;
-	margin-left: 0
-}
-#bio .content-row:before{
-	width: 100%;
-	left: 0px;
-	top: 0;
-	margin-top: 0;
-	margin-left: 0
-}
-}
  @media (max-width: 800px) {
 .portfolio-content .col-md-6 {
 	padding-left: 15px;
@@ -4536,12 +4471,10 @@ aside {
 	margin-left: -8vw;
 }
 #home-banner .content-row{
-	position:relative;
 	left:1pc;
 	top:2pc;
 }
 #bio .content-row{
-	position:relative;
 	left:1pc;
 	top:2pc;
 }
